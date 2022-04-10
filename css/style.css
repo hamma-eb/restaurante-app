@@ -148,6 +148,12 @@ footer {
   background-color: brown;
 
 }
+.container-fluid {
+  color: white;
+  padding: 1.825em 0;
+  font-size: 20px;
+  padding-left: 3%;
+  }
 
 
 /* para pantalla Tablet */
@@ -178,9 +184,8 @@ footer {
 
   }
 } 
-
-
-
+    
+}
 /* Para pantalla Movil */
 @media screen and (max-width: 500px) {
  
