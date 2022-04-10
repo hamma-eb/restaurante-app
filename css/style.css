@@ -1,6 +1,7 @@
 html, 
 body {
     height: 100%;
+    font-family: "Montserrat", "Arial", sans-serif;
 }
 
 .container {
@@ -84,10 +85,32 @@ a, a:hover, a:focus, a:active {
 }
 
 .land-page {
-  background-color: aqua;
+  background-image: url('./img/fondo.jpg');
   width: 100%;
   height: 184px;
+  background-position: 50% 50%;
+  color: white;
+  font-size: 2.5em;
+  font-family: "Handlee", cursive;
+}
+.price {
+  color: #21242e;
+}
 
+.button-order {
+  height: 40px;
+  margin-left: 10px;
+  background: transparent;
+  color: white;
+  border-radius: 3px;
+  border: 2px  #21242e solid;
+}
+
+.button-order:hover {
+  background-color: #21242e;
+}
+.arrow:hover {
+  margin-left: 3px;
 }
 
 .sections {
@@ -127,11 +150,6 @@ footer {
 }
 
 
-/* Para pantalla Movil */
-@media screen and (max-width: 500px) {
- 
-}
-
 /* para pantalla Tablet */
 @media only screen and (min-width: 501px) and (max-width: 1000px) {  
   .main {
@@ -139,10 +157,18 @@ footer {
   }
 
   .land-page {
-    background-color: aqua;
     width: 40%;
     height: 556px;
-  
+  }
+
+  .land-page-section-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .land-page-section-tablet, h1 {
+    margin-top: 50px;
   }
   
   .sections {
@@ -152,5 +178,13 @@ footer {
 
   }
 } 
+
+
+
+/* Para pantalla Movil */
+@media screen and (max-width: 500px) {
+ 
+}
+
 
 
